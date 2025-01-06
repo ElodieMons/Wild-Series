@@ -13,13 +13,14 @@ router.get("/api/items", itemActions.browse);
 router.get("/api/items/:id", itemActions.read);
 router.post("/api/items", itemActions.add);
 
-// Declaration of Welcome road
+// Declaration of Welcome route
 import sayActions from "./modules/item/say/sayActions";
-
-// Register Road
+// Register route
 router.get("/", sayActions.sayWelcome);
 
+//Declaration of Pprogram route
 import programActions from "./modules/item/programActions";
+// Register route
 router.get("/api/programs", programActions.browse);
 
 export default router;
