@@ -21,7 +21,7 @@ const sayWelcome: RequestHandler = (_req, res) => {
 app.get("/", sayWelcome);
 
 // Get the port from the environment variables
-const port = process.env.APP_PORT || 3310;
+const port = process.env.APP_PORT;
 
 // Start the server and listen on the specified port
 app
