@@ -14,7 +14,7 @@ function Programs() {
 
   useEffect(() => {
     const fetchPrograms = async () => {
-      const response = await fetch("{CLIENT_URL}/api/programs");
+      const response = await fetch("http://localhost:3310/api/programs");
       if (!response.ok) {
         throw new Error(`Error ${response.status}: ${response.statusText}`);
       }
