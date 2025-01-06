@@ -9,11 +9,17 @@ const router = express.Router();
 // Define item-related routes
 import itemActions from "./modules/item/itemActions";
 
-router.get("/");
 router.get("/api/items", itemActions.browse);
 router.get("/api/items/:id", itemActions.read);
 router.post("/api/items", itemActions.add);
 
-/* ************************************************************************* */
+// Declaration of Welcome road
+import sayActions from "./modules/item/say/sayActions";
+
+// Register Road
+router.get("/", sayActions.sayWelcome);
+
+import programActions from "./modules/item/programActions";
+router.get("/api/programs", programActions.browse);
 
 export default router;

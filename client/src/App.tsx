@@ -1,7 +1,7 @@
 import "./App.css";
 
 function App() {
-  return <section>Welcome to Wild Series!</section>;
+  return <></>;
 }
 
 export default App;
